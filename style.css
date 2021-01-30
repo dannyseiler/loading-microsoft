@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+}
+.loader-container {
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+  animation-name: loadercontainer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.loader1 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #f35325;
+  border-top-left-radius: 10px;
+  text-align: center;
+
+  animation-name: loader1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loader2 {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background-color: #81bc06;
+  border-top-right-radius: 10px;
+  text-align: center;
+
+  animation-name: loader2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loader3 {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  background-color: #05a6f0;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+
+  animation-name: loader3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.loader4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background-color: #ffba08;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+
+  animation-name: loader4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/**** MEDIA QUERIES ****/
+
+/**** KEYFRAMES ****/
+
+@keyframes loadercontainer {
+  0% {
+    width: 70px;
+    height: 70px;
+  }
+  50% {
+    width: 45px;
+    height: 45px;
+  }
+  100% {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@keyframes loader1 {
+  0% {
+    background-color: #f35325;
+  }
+  100% {
+    background-color: #81bc06;
+  }
+}
+
+@keyframes loader2 {
+  0% {
+    background-color: #81bc06;
+  }
+  100% {
+    background-color: #05a6f0;
+  }
+}
+
+@keyframes loader3 {
+  0% {
+    background-color: #05a6f0;
+  }
+  100% {
+    background-color: #ffba08;
+  }
+}
+
+@keyframes loader4 {
+  0% {
+    background-color: #ffba08;
+  }
+  100% {
+    background-color: #f35325;
+  }
+}
